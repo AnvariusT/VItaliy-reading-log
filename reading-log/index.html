@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Make the site responsive on mobile devices -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Reading Log</title>
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Reading Log</h1>
+    <p>Track your reading journey and see covers too!</p>
+  </header>
+
+  <!-- Add Book Form -->
+  <section id="add-book">
+    <h2>Add a New Book</h2>
+    <form id="add-book-form">
+      <!-- Date Field -->
+      <label for="date-input">Date:</label>
+      <input 
+        type="date" 
+        id="date-input" 
+        required
+      />
+
+      <!-- Title Field -->
+      <label for="title-input">Title:</label>
+      <input 
+        type="text" 
+        id="title-input" 
+        placeholder="e.g. The Great Gatsby"
+        required
+      />
+
+      <!-- Genre Field -->
+      <label for="genre-input">Genre:</label>
+      <input
+        type="text"
+        id="genre-input"
+        placeholder="e.g. Fiction"
+        required
+      />
+
+      <!-- Rating Field -->
+      <label for="rating-input">Rating (1-5):</label>
+      <input
+        type="number"
+        id="rating-input"
+        placeholder="e.g. 5"
+        min="1"
+        max="5"
+      />
+
+      <button type="submit">Add Book</button>
+    </form>
+  </section>
+
+  <!-- Search Section -->
+  <section id="search">
+    <h2>Search Your Books</h2>
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder="Type to search..."
+    />
+  </section>
+
+  <!-- Book List Table -->
+  <section id="book-list">
+    <h2>Your Books</h2>
+    <table id="books-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Rating</th>
+          <th>Cover</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows dynamically inserted by script.js -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

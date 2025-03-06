@@ -1,0 +1,119 @@
+/* Basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling: set a background image*/
+body {
+    background: url("images/darkGreen.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #f8f8f8; /* light text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header section*/
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+}
+header p {
+    color: #eaeaea;;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+/* Form fields */
+#add-book-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #add-book-form label {
+    flex: 0 0 100%;
+  }
+  #add-book-form input {
+    flex: 1 1 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+
+/* Button styling */
+button {
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  button:hover {
+    background-color: #ff7a00;
+  }
+
+/* Search section input styling */
+#search {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+#search input {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #aaa;
+  color: #333;
+  box-sizing: border-box;
+}
+#search input:focus {
+  border-color: #ff8c00;
+  outline: none;
+}
+
+/* Table styling */
+#books-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  #books-table th,
+  #books-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    color: #f8f8f8; 
+  }
+  #books-table thead {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Align rating column center */
+  #books-table td:nth-child(4) {
+    text-align: center;
+  }
+
+  /* Delete button */
+.delete-btn {
+    background-color: #dc3545 !important; 
+  }
+  #books-table td img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
+
